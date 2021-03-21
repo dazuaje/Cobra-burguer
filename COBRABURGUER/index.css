@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-amarillo: yellow;
+    --color-gris: gray;
+    
+}
+.hero{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4)),url(8.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+/*-----------------------------------NAV-----------------------------*/
+.logo {
+    color: var(--color-amarillo);
+    font-size: 30px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+}
+.nav-bar{
+    display: flex;
+    padding: 40px 120px;
+}
+.nav{
+    flex:1;
+}
+.nav ul{
+    margin-left: 120px;
+    display:inline-block;
+}
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+}
+.nav ul a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav ul li::after{
+    content: '';
+    width: 0;
+    height: 2.5px;
+    background-color: var(--color-amarillo);
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.nav ul li:hover::after{
+    width: 100%;
+}
+.btn{
+    padding:15px 20px;
+    margin-bottom: 10px;
+    border:0;
+    background: var(--color-amarillo);
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav .btn{
+    float: right;
+}
+/*-------------------------------BANNER-------------------------------------------------------*/
+.banner-tittle{
+    margin: 80px 130px;
+    color: #fff;
+}
+.banner-tittle h1{
+    font-size: 64px;
+    margin-bottom: 40px;
+}
+.banner-tittle h1 span{
+    color: var(--color-amarillo);
+
+}
+/*--------------------VERTICAL-BAR-----------------------------*/
+
+
+.vertical-bar{
+    height: 100%;
+    background: #000;
+    top: 0;
+    left: 0;
+    position:absolute;
+}
+.search-icon{
+    height: 60%;
+    width: 80px;
+}
+
+.search-icon i{
+    margin: 45px 23px;
+    display: block;
+    color:#fff;
+    font-size: 30px;
+    cursor:pointer;
+}
+   
+.social-icon {
+    height: 35%;
+    width: 80px;
+    background: var(--color-amarillo);
+    text-align: center;
+    padding-top: 27%;
+    bottom: 0;
+    position: absolute;
+    color: #fff;
+}
+.social-icon i {
+margin: 15px 23px;
+display: block;
+padding: 8px;
+border: 1px solid #000;
+border-radius: 50%;
+cursor: pointer;
+color: #000;
+}
+.nav-bar .fa-bars{
+    display: none;
+}
+.nav-bar .fa-times{
+    display: none;
+}
+
+
